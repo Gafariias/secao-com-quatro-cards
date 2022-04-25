@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* Gerais */
+
+:root {
+    --verde: #68D6CD;
+    --vermelho: #E22E4A;
+    --amarelo: #FFC006;
+    --azul: #5596CD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+}
+
+/* Classes gerais */
+.coluna {
+    flex-direction: column;
+}
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.direita {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Textos */
+h1 {
+    font-weight: 100;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 32px;
+    margin: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+p {
+    color: grey;
+    margin: 20px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: .5s;
+}
+
+a:hover {
+    font-size: 1.1rem;
+}
+
+/* Conteudos */
+header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #dd7f8d, white );
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+footer a:hover {
+    font-size: 17px;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* classes */
+.titulo {
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.secao {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 280px;
+    height: 180px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.295);
+    box-shadow: -1px 0px 10px rgba(0, 0, 0, 0.295);
+    transition-duration: .3s;
+}
+
+.secao:hover {
+    width: 300px;
+    padding: 30px;
+}
+
+.icone {
+    width: 40px;
+    margin-top: 15px;
+}
+
+.attribution {
+    line-height: 30px;
+}
+
+/* Ids */
+#supervisor {
+    border-top: solid var(--verde)
+}
+
+#builder {
+    border-top: solid var(--vermelho);
+}
+
+#karma {
+    border-top: solid var(--amarelo);
+}
+
+#calculator {
+    border-top: solid var(--azul);
+}
+
+/* Diferentes tamanhos de tela */
+@media only screen and (max-width: 1080px) {
+    .centro {
+        flex-direction: column;
+    }
+}
